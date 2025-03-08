@@ -13,6 +13,7 @@
     pkgs.nushell
     pkgs.bat
     pkgs.carapace
+    pkgs.cargo
   ];
 
   # Set PATH to match Bash's PATH
