@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, dotfiles, ... }:
 
 {
   home.username = "blade";

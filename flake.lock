@@ -1,5 +1,18 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741457497,
+        "narHash": "sha256-K3Y7T8HmfHD0bG6BUDqK4boYdZeysYu9O9lcKJINf3w=",
+        "path": "/home/blade/dotfiles",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/blade/dotfiles",
+        "type": "path"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -38,6 +51,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }

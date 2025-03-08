@@ -9,7 +9,8 @@
     };
 
     dotfiles = {
-      url = "git+file:///home/blade/dotfiles"; # Replace with your dotfiles repo URL or local path
+      # url = "git@github.com:edyzakaria/dotfiles.git"; # Replace with your dotfiles repo URL or local path
+      url = "path:/home/blade/dotfiles";
       flake = false; # or true if it's also a flake
     };
   };
@@ -24,7 +25,7 @@
       modules = [
         ./home.nix
       ];
+      extraSpecialArgs = { inherit dotfiles; }; # Pass dotfiles as a special argument
     };
-    dotfiles = dotfiles;
   };
 }
