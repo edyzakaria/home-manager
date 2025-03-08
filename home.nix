@@ -18,6 +18,7 @@
 
   home.file = {
     ".config/nvim".source = "${dotfiles}/nvim"; # Reference dotfiles
+    ".config/carapace".source = "${dotfiles}/carapace";
   };
 
   programs.home-manager.enable = true;
