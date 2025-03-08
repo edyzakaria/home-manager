@@ -12,6 +12,7 @@
     pkgs.glow
     pkgs.nushell
     pkgs.bat
+    pkgs.carapace
   ];
 
   programs.home-manager.enable = true;
