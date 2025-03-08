@@ -11,6 +11,7 @@
     pkgs.sshs
     pkgs.glow
     pkgs.nushell
+    pkgs.bat
   ];
 
   programs.home-manager.enable = true;
