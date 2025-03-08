@@ -6,6 +6,10 @@
   home.stateVersion = "24.05";
   home.packages = [
     pkgs.hello
+    pkgs.vim
+    pkgs.direnv
+    pkgs.sshs
+    pkgs.glow
     pkgs.nushell
   ];
 
