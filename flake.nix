@@ -7,9 +7,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+    dotfiles = {
+      url = "git+file:///home/blade/dotfiles"; # Replace with your dotfiles repo URL or local path
+      flake = false; # or true if it's also a flake
+    };
+  };
+  outputs = { self, nixpkgs, home-manager, dotfiles, ... }:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -18,10 +22,9 @@
     homeConfigurations."blade" = home-manager.lib.homeManagerConfiguration {
       pkgs = pkgs;
       modules = [
-#        /home/blade/.config/home-manager/home.nix
         ./home.nix
       ];
-#      extraSessionVariables.HOME_DIR = "/home/blade";
     };
+    dotfiles = dotfiles;
   };
 }
