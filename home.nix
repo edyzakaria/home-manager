@@ -65,7 +65,6 @@
     # '';
     ".config/nvim".source = "${dotfiles}/nvim"; # Reference dotfiles
     ".config/carapace".source = "${dotfiles}/carapace";
-    ".config/starship.nu".source = "${dotfiles}/starship.nu";
     ".config/starship.toml".source = "${dotfiles}/starship.toml";
 #    ".config/nushell".source = "${dotfiles}/nushell";
 #    ".config/nushell".recursive = true;
