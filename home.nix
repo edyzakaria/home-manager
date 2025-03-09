@@ -19,7 +19,7 @@
   home.file = {
     ".config/nvim".source = "${dotfiles}/nvim"; # Reference dotfiles
     ".config/carapace".source = "${dotfiles}/carapace";
-    ".config/nushell".source = "${dotfiles}/nushell";
+#    ".config/nushell".source = "${dotfiles}/nushell";
     ".config/nix".source = "${dotfiles}/nix";
 #    ".config/helm".source = "${dotfiles}/helm";
   };
