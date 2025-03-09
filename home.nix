@@ -45,6 +45,7 @@
     pkgs.cargo
     pkgs.git
     pkgs.discord
+    pkgs.fzf
   ];
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
     "discord"
@@ -96,3 +97,4 @@
 #  programs.fzf.enable = true;
 #  programs.bash.enable = true;
 }
+	
