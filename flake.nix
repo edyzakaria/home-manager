@@ -21,10 +21,9 @@
   in
   {
     homeConfigurations."blade" = home-manager.lib.homeManagerConfiguration {
-      pkgs = pkgs;
-      modules = [
-        ./home.nix
-      ];
+      # pkgs = pkgs;
+      inherit pkgs;
+      modules = [ ./home.nix ];
       extraSpecialArgs = { inherit dotfiles; }; # Pass dotfiles as a special argument
     };
   };
