@@ -43,8 +43,12 @@
     pkgs.bat
     pkgs.carapace
     pkgs.cargo
+    pkgs.git
+    pkgs.discord
   ];
-
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
+    "discord"
+  ];
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -84,8 +88,11 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    CARGO_HOME = "/home/blade/.cargo";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+#  programs.fzf.enable = true;
+#  programs.bash.enable = true;
 }
