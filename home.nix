@@ -64,12 +64,10 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/nvim".source = "${dotfiles}/nvim"; # Reference dotfiles
-    ".config/carapace".source = "${dotfiles}/carapace";
-#    ".config/starship".recursive = true;
+#    ".config/nvim".source = "${dotfiles}/nvim"; # Reference dotfiles
+#    ".config/carapace".source = "${dotfiles}/carapace";
 #    ".config/starship".source = "${dotfiles}/starship";
-    ".config/nix".source = "${dotfiles}/nix";
-#    ".config/helm".source = "${dotfiles}/helm";
+#    ".config/nix".source = "${dotfiles}/nix";
   };
 
   # Home Manager can also manage your environment variables through
