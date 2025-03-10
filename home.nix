@@ -36,6 +36,7 @@
     # '')
     pkgs.hello
     pkgs.vim
+    pkgs.nvi
     pkgs.direnv
     pkgs.sshs
     pkgs.glow
